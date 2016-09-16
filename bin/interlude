@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "./lib/interlude"
+
+if ARGV[0].nil?
+  Interlude::App.new.run
+else
+  Interlude::App.new(step: ARGV[0].to_i).run
+end

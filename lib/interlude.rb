@@ -46,11 +46,3 @@ module Interlude
     end
   end
 end
-
-if __FILE__ == $0
-  if ARGV[0].nil?
-    Interlude::App.new.run
-  else
-    Interlude::App.new(step: ARGV[0].to_i).run
-  end
-end
