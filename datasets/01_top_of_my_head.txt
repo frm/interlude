@@ -46,3 +46,7 @@ yelp
 yo
 yikyak
 telegram
+chatroulette
+omegle
+yahoo!
+yahoo
