@@ -10,7 +10,7 @@ asana
 snapchat
 instagram
 mashable
-quota
+quora
 feedly
 pocket
 pinterest
@@ -31,11 +31,16 @@ hangouts
 wave
 google_wave
 lastfm
+last.fm
+last_fm
 spotify
 linkedin
 livejournal
 meetup
 secondlife
+todoist
+evernote
+macdown
 rdio
 pandora
 reddit
@@ -73,6 +78,7 @@ airbnb
 twitch
 masquerade
 badoo
+baidu
 netflix
 hulu
 blogspot
@@ -107,6 +113,7 @@ adobe_reader
 pou
 flipboard
 kindle
+amazon kindle
 farmville
 kik
 retrica
@@ -124,3 +131,38 @@ slither.io
 wish
 clash_of_clans
 subway_surfer
+angry birds
+imdb
+trakt
+letterboxd
+medium
+firefox
+opera
+safari
+gmail
+google_mail
+hotmail
+outlook
+mint
+craigslist
+temple run
+talking tom
+paypal
+tesla
+solar city
+spacex
+nasa
+translate
+google translate
+google
+search
+google search
+google voice search
+siri
+cortana
+comcast
+verizon
+at&t
+time warner
+pokemon
+pokemon go
