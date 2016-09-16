@@ -71,3 +71,15 @@ amazon
 steam
 airbnb
 twitch
+masquerade
+badoo
+netflix
+hulu
+blogspot
+blogger
+aboutme
+about_me
+drive
+dribbble
+behance
+bandcamp
