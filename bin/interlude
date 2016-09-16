@@ -3,7 +3,7 @@
 require "./lib/interlude"
 
 if ARGV[0].nil?
-  Interlude::App.new.run
+  Interlude::App.new(dataset: ARGV[0]).run
 else
-  Interlude::App.new(step: ARGV[0].to_i).run
+  Interlude::App.new(dataset: ARGV[0], step: ARGV[1].to_i).run
 end

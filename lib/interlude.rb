@@ -2,34 +2,28 @@ require "httparty"
 
 module Interlude
   class App
-    def initialize(step: 1, datasets: "datasets")
+    def initialize(step: 1, dataset: nil)
       @step = step
-      @dataset_dir = datasets
+      @dataset = dataset
     end
 
     def run
-      datasets.each do |set|
-        each_word set do |keyword|
-          if correct_answer?(keyword)
-            puts "FOUND IT! #{keyword}"
-            break
-          end
+      each_word do |keyword|
+        if correct_answer?(keyword)
+          puts "FOUND IT! #{keyword}"
+          break
         end
       end
     end
 
     private
 
-    def datasets
-      @_datasets ||= Dir.glob("#{@dataset_dir}/*.txt")
-    end
-
     def step
       @_step ||= @step.to_s.rjust(2, "0")
     end
 
-    def each_word(file, &block)
-      File.open(file, 'r') do |file|
+    def each_word(&block)
+      File.open(@dataset, 'r') do |file|
         file.each_line do |line|
           block.call(line.strip)
         end
