@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rm -f datasets/part.*
+cat datasets/* | perl -ne 'print lc' | sort | uniq | split -l 50 - datasets/part.

@@ -1,8 +1,5 @@
 #!/bin/sh
 
-rm -f datasets/part.*
-cat datasets/* | perl -ne 'print lc' | sort | uniq | split -l 50 - datasets/part.
-
 ls datasets/part.* | while read file; do
   (echo "starting $file"; bin/interlude $file $1; echo "ended $file") &
 done
